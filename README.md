@@ -39,6 +39,8 @@ Code is well documented in the following files :-
 
 ## Experiments and Visualisations :-
 
+Experiments 1-3 are available on [this notebook](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/master/VAE.ipynb); 4-5 on [this notebook](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_two_latent_variables.ipynb); 6-7 on [this notebook](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_without_KLD_Loss.ipynb) and 8 on [this notebook](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_without_KLD_Loss.ipynb).
+
 1. When we sample epsilon values at regular intervals, make z from them using mu and sigma of some image, then the reconstructed images are all similar to the original image but having some minute differences.
 <img src="images/experiment_1.png" width="300"/>
 
