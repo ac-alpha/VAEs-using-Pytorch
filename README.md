@@ -1,2 +1,4 @@
+<img src="images/image_transition.png" />
+
 # VAEs-using-Pytorch
-Variational Autoencoders trained on MNIST Dataset using PyTorch
+
