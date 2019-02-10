@@ -61,3 +61,13 @@ Code is well documented in the following files :-
 
 8. In the VAE_without_Cross_Entropy_Loss model, the scatter plot contains blobs of different digits randomly mixed together but they tend to be closer to each other.
 <img src="images/scatter_kld.png" width="300"/>
+
+9. As we increase the number of latent variables, we get more number of z's which produce noise upon passing through the decoder network.
+
+## Contributing
+
+Suggestions to the repository are more than welcome. To open a pull request, [click here](https://github.com/ac-alpha/VAEs-using-Pytorch/pulls). No specific naming criteria of variables s necessary as long as the name is explanatory.
+
+## Licence
+
+See [Licence]()
