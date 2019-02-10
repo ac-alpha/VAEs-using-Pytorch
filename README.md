@@ -66,8 +66,8 @@ Code is well documented in the following files :-
 
 ## Contributing
 
-Suggestions to the repository are more than welcome. To open a pull request, [click here](https://github.com/ac-alpha/VAEs-using-Pytorch/pulls). No specific naming criteria of variables s necessary as long as the name is explanatory.
+Suggestions to the repository are more than welcome. To open a pull request, [click here](https://github.com/ac-alpha/VAEs-using-Pytorch/pulls). No specific naming criteria of variables is necessary as long as the name is explanatory.
 
-## Licence
+## License
 
-See [Licence]()
+See [License](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/LICENSE)
