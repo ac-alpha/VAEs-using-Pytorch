@@ -40,8 +40,10 @@ Code is well documented in the following files :-
 ## Experiments and Visualisations :-
 
 1. When we sample epsilon values at regular intervals, make z from them using mu and sigma of some image, then the reconstructed images are all similar to the original image but having some minute differences.
+<img src="images/experiment_1.png" width="300"/>
 
 2. When we change only one dimension of z, and then create samples, then they look very similar to the original image.
+<img src="images/experiment_2.png" width="300"/>
 
 3. Taking a fixed value of epsilon, when we make 2 z values z1 and z2 (using mu and sigma of 2 different images) using that epsilon then the values in between them create samples which are mix of the 2 digits.
 <img src="images/four_to_nine.png" width="300"/>
