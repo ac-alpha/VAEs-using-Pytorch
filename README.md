@@ -34,9 +34,28 @@ Code is well documented in the following files :-
 1. [VAE Vanilla](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE.ipynb) - Simple VAE using **20 latent variables** trained on a **fully connected** network.
 2. [VAE_two_latent_variables](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_two_latent_variables.ipynb) - **Fully Connected** network with **only 2 latent variables**.
 3. [VAE_CNN](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_CNN.ipynb) - VAE using **Convolution Layers** .
-4. [VAE_without_KLD_Loss](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_without_KLD_Loss.ipynb) - VAE trained using only **Cross Entropy Loss**.
-5. [VAE_without_Cross_Entropy_Loss](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_without_KLD_Loss.ipynb) - VAE trained using only **KL Divergence Loss**.
+4. [VAE_without_KLD_Loss](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_without_KLD_Loss.ipynb) - VAE trained using only **Cross Entropy Loss** and **only 2 latent variables**.
+5. [VAE_without_Cross_Entropy_Loss](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_without_KLD_Loss.ipynb) - VAE trained using only **KL Divergence Loss** and **only 2 latent variables**.
 
-## Experiments and Results :-
+## Experiments and Visualisations :-
 
-1. 
+1. When we sample epsilon values at regular intervals, make z from them using mu and sigma of some image, then the reconstructed images are all similar to the original image but having some minute differences.
+
+2. When we change only one dimension of z, and then create samples, then they look very similar to the original image.
+
+3. Taking a fixed value of epsilon, when we make 2 z values z1 and z2 (using mu and sigma of 2 different images) using that epsilon then the values in between them create samples which are mix of the 2 digits.
+<img src="images/four_to_nine.png" width="300"/>
+
+4. In 2 latent variable model, when we sample z values at specific intervals and pass them into the decoder, then we can see the transition between the digits.
+<img src="images/digit_transition.png" width="300"/>
+
+5. In 2 latent variable model, the scatter plot observed has the points belonging to one digit very close to that belonging to other digits and we can transition between them without sampling much of noise.
+<img src="images/scatter_both.png" width="300"/>
+
+6. If we perform experiment similar to experiment 1 in the VAE_without_KLD_Loss model, then the reconstructed images look similar and are actually having same value.
+
+7. In the VAE_without_KLD_Loss model, the scatter plot contains blobs of different digits seperated by random noise.
+<img src="images/scatter_ce.png" width="300"/>
+
+8. In the VAE_without_Cross_Entropy_Loss model, the scatter plot contains blobs of different digits randomly mixed together but they tend to be closer to each other.
+<img src="images/scatter_kld.png" width="300"/>
