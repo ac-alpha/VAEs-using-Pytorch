@@ -16,8 +16,27 @@ almost nothing to our estimate of `P(X)`. The key idea behind the variational
 autoencoder is to attempt to sample values of z that are likely to have
 produced X, and compute `P(X)` just from those.
 
+Usually the distribution Q(z|X) is taken to be gaussian. After taking everything into account,  the final loss function comes out to be a sum of KL Divergence of `Q(z|X)` and `P(z)`, i.e. `D(Q(z|X)||P(z))`; and cross entropy loss between original X and reconstructed X. For more details on this, see the [paper](https://arxiv.org/pdf/1312.6114) and [tutorial](https://arxiv.org/pdf/1606.05908)
+
 ## Pipeline
 
 <img src="images/VAE_pipeline.png" />
 
 This image has been taken from this [tutorial](https://arxiv.org/pdf/1606.05908).
+
+## Dataset
+
+For all the experiments, I have used the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) loaded using the DataLoader present in pytorch only.
+
+## Code
+
+Code is well documented in the following files :-
+1. [VAE Vanilla](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE.ipynb) - Simple VAE using **20 latent variables** trained on a **fully connected** network.
+2. [VAE_two_latent_variables](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_two_latent_variables.ipynb) - **Fully Connected** network with **only 2 latent variables**.
+3. [VAE_CNN](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_CNN.ipynb) - VAE using **Convolution Layers** .
+4. [VAE_without_KLD_Loss](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_without_KLD_Loss.ipynb) - VAE trained using only **Cross Entropy Loss**.
+5. [VAE_without_Cross_Entropy_Loss](https://github.com/ac-alpha/VAEs-using-Pytorch/blob/readme/VAE_without_KLD_Loss.ipynb) - VAE trained using only **KL Divergence Loss**.
+
+## Experiments and Results :-
+
+1. 
